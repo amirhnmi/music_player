@@ -1,48 +1,62 @@
-body{
-    align-items: center;
-    background-color: black;
-    max-width: 300px;
-    height: 10vh;
-    margin: auto;
-
-}
-
-
-#music-name{
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4c4cff, #00bcd4);
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
     display: flex;
-    font-family: Impact;
-    color: rgb(251, 253, 255);
-    /* margin: 40px 70px; */
-    align-items: center;
     justify-content: center;
-
+    align-items: center;
 }
-#music-cover{
-    display: block;
+#player-container {
+    background-color: #121212;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 400px;
+}
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+audio {
     width: 100%;
-    border-radius: 50%;
-    animation: glow .5s ease-in-out infinite alternate;
-    animation-play-state: paused;
+    margin: 20px 0;
 }
-
-#music-time{
-    width: 100%;
-    height: 2px;
-    appearance: none;
-    background-color: rgba(128, 114, 114, 0.2);
-    margin: 60px 0px;
+input[type="file"] {
+    display: none;
+}
+label {
+    padding: 10px 20px;
+    background-color: #1db954;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s;
 }
-#music-time::-webkit-slider-thumb{
-    appearance: none;
-    width: 20px;
-    height: 20px;
+label:hover {
+    background-color: #1aa34a;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.controls button {
+    background-color: #333;
+    border: none;
+    padding: 15px;
     border-radius: 50%;
-    background-color: white;
-}
-#btns i{
-    font-size: 2em;
-    margin: 0px 30px;
-    color: aliceblue;
     cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+.controls button:hover {
+    background-color: #555;
 }

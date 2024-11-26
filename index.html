@@ -1,22 +1,23 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8c599858c6.js" crossorigin="anonymous"></script>
+    <title>Modern Music Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>music player</title>
 </head>
 <body>
-    <h1 id="music-name"></h1>
-    <img src="" id="music-cover">
-    <input id="music-time" type="range" value="0">
-    <div id="btns">
-        <i id="pre-btn" class="fas fa-backward"></i>
-        <i id="play-btn" class="fas fa-play"></i>
-        <i id="next-btn" class="fas fa-forward"></i>
+<div id="player-container">
+    <h2>Music Player- Amir Hossein Mohammadi</h2>
+    <audio id="audio-player" controls></audio>
+    <input type="file" id="file-input" accept="audio/*">
+    <label for="file-input">Upload Music</label>
+    <div class="controls">
+        <button id="play-button">▶️</button>
+        <button id="pause-button">⏸️</button>
     </div>
-
-    <script src="./script.js"></script>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
